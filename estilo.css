@@ -1,0 +1,66 @@
+/********* estilo de aventura natural **********/
+/*********       layout de examen     **********/
+
+/********* estilo general ***********/
+body {background-color:rgb(235, 235, 210);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+#wrapper {width:95%;
+          margin:auto;}
+
+/********* estilo de header *********/
+header {background-image:url("imagenes/cabecera.jpg");
+        height:300px;
+        background-size:cover;
+        background-position:right;
+        }
+
+/********** estilo de navegación **********/
+nav {background-color:#333;}
+
+nav ul {margin:0;padding:0;
+        list-style-type: none;}
+
+nav ul li {display:inline-block;
+           padding:10px;}               
+nav ul li a {color:white;
+             text-decoration:none;
+             font-size:1.2em;
+             font-weight:bold;}
+nav ul li a:hover {color:rgb(211, 211, 174);}
+
+/****** estilo de main *******/
+main {background-color:white;
+      padding:4%;}
+
+main h1 {margin-top:0;
+         color:rgb(253, 125, 147);
+         text-align: center;
+         padding-bottom:20px;
+         }
+main img {width:25%;
+          margin:3.7%;}
+
+/********* estilo de footer **********/
+footer {background-color:#333 ;}
+
+footer p {color:white;
+          text-align: center;
+          padding:15px;
+          margin-top:0px;}
+
+/********* media queries ************/
+
+/******** query para tablet PONER PRIMERO ****/
+@media only screen and (max-width:900px){
+        main img {width:40%;
+                  margin:4%;}
+}
+/******** query para móvil PONER DESPUÉS *****/
+@media only screen and (max-width:600px){
+        header {background-image: url("imagenes/cabecera2.jpg");
+                background-position: center;
+                height:100vh;}
+        main img {width:80%;
+                  margin:10.5%;}
+     }
